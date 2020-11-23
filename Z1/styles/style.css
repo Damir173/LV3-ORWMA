@@ -3,6 +3,9 @@ ol{
     width: 250px;
     padding: 5px;
 }
+/*u ovom dijelu ogranicavamo border citave numerirane liste, 
+dajemo mu fiksnu velicinu (da ne bi border bio preko citavog 
+ekrana) te ispunjenje od 5px*/
 
 li{
 padding: 3px 3px 3px 34px;
@@ -17,6 +20,10 @@ li:last-child{
     background-position: 5px center;
     background-color: rgba(0, 255, 0, 0.75);
 }
+/*prvo sam odabrao last child (zadnji element liste) i stavio da mu je margina
+0 px (tako je zadano).. preko background-image ubacujemo malu slikicu, sa no-repeat
+zadajemo da se ne ponavlja, te je centriramo. Sto se tice background-color, koristimo
+rgba notaciju gdje zadnji clan npr. 0.75 oznacava prozirnost */
 li:first-child{
     background-image: url("../images/en-GB.png");
     background-repeat: no-repeat;
@@ -52,7 +59,7 @@ a {
     text-decoration: none;
     color: black;
 }
-
+/*micemo dekoraciju i onemogucujemo stil vezi*/
 a:hover {
     color: red;
     text-transform: uppercase;
@@ -60,3 +67,4 @@ a:hover {
 }
 
 
+/*na prijelaz stavljamo uppercase i underline te crvenu boju/*
