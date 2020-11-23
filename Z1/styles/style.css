@@ -1,0 +1,62 @@
+ol{
+    border: 2px solid black;
+    width: 250px;
+    padding: 5px;
+}
+
+li{
+padding: 3px 3px 3px 34px;
+list-style-position: inside;
+margin-bottom: 5px;
+}
+
+li:last-child{
+    margin-bottom: 0px;
+    background-image: url("../images/en-GB.png");
+    background-repeat: no-repeat;
+    background-position: 5px center;
+    background-color: rgba(0, 255, 0, 0.75);
+}
+li:first-child{
+    background-image: url("../images/en-GB.png");
+    background-repeat: no-repeat;
+    background-position: 5px center;
+    background-color: rgba(0, 255, 0, 0.75);
+}
+li:nth-child(2){
+    background-image: url("../images/es.png");
+    background-repeat: no-repeat;
+    background-position: 5px center;
+    background-color: rgba(0, 0, 255, 0.5);
+}
+li:nth-child(4){
+    background-image: url("../images/es.png");
+    background-repeat: no-repeat;
+    background-position: 5px center;
+    background-color: rgba(0, 0, 255, 0.5);
+}
+li:nth-child(3){
+    background-image: url("../images/de.png");
+    background-repeat: no-repeat;
+    background-position: 5px center;
+    background-color: rgba(255, 0, 0, 0.25);
+}
+li:nth-child(5){
+    background-image: url("../images/de.png");
+    background-repeat: no-repeat;
+    background-position: 5px center;
+    background-color: rgba(255, 0, 0, 0.25);
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+a:hover {
+    color: red;
+    text-transform: uppercase;
+    text-decoration: underline;
+}
+
+
