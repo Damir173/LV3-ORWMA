@@ -1,4 +1,9 @@
-﻿body {
+﻿/*HTML Dokument povezali smo sa CSS-om (kao i prošli) na način da smo u index.html 
+dodali   <link rel="stylesheet" href="styles/style.css">*/
+/*U samom zadatku koristimo dosta puta em, on nam se referira na html { font-size: 10px; }*/
+/*"em - Relative to the font-size of the element (2em means 2 times the size of the current font)"*/
+
+body {
   margin: 0;
 }
 
@@ -16,36 +21,41 @@ html {
   border: 0.2em solid black;
   border-radius: 1.5em;
 }
+/* predstavlja glavnu karticu (imamo sve zadano)*/
 
 .card header{
   background-image: linear-gradient(to bottom,rgba(0,0,0,0.1), rgba(0,0,0,0));
   height: 3em;
   padding: 1em 1em 1em 1em;
-  
 }
+
+/* povezujemo se na .card header, gdje kao background dajemo gradient radi lijepšeg izgleda
+Ispunjenja (paddinzi) te visina (height) su u em veličinama, kao što se traži */
 
 .card footer{
   background-image: linear-gradient(to bottom,rgba(0,0,0,0), rgba(0,0,0,0.1));
   height: 3em;
   padding: 1em 1em 1em 1em;
 }
-
+/* radimo istu stvar sa .card footerom*/
 .card article img{
   max-height: 100%;
   float: right;
 }
-
+/*povezujemo se na article, dajemo max-height 100% kako bi se visina slike postavila na roditeljski kontejner
+te je pozicioniramo desno */
 article{
   height: 12em;
   background-color: rgba(0,0,0,0.5)
 }
+
 
 h2{
   margin: 0;
   font-size: 2em;
   line-height: 1.5em;
 }
-
+/*dodajemo pravilo da svaki h2 element ima marginu 0, velicinu 20px te visinu linije tako da bude u sredini headera*/
 p{
   margin: 0%;
 }
@@ -61,3 +71,4 @@ article p{
   padding: 1em 1em 1em 1em;
   color: rgb(255, 255, 255);
 }
+/*poravavamo paragraf article elementa tako da se poravnava sa gornjim h2 elementom*/

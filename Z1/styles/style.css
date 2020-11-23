@@ -12,7 +12,10 @@ padding: 3px 3px 3px 34px;
 list-style-position: inside;
 margin-bottom: 5px;
 }
-
+/*u ovom dijelu stavljamo lijevo ispunjenje na 34px, a ostala na 3
+a sa list-style-position:inside; stavljamo poziciju numeriranja unutar
+liste
+u zadatku je naglaseno da je svaka donja margina 5px, osim zadnje*/
 li:last-child{
     margin-bottom: 0px;
     background-image: url("../images/en-GB.png");
